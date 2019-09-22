@@ -2,7 +2,7 @@
 
 由 Unicode 公開資料取得 Unicode 字元的版本
 
-# 說明
+## 說明
 
 原始資料來源是 https://unicode.org/Public/UCD/latest/ucdxml/ucd.all.flat.zip
 
@@ -12,17 +12,17 @@
 
 二份資料解壓縮後放在同一層目錄中.
 
-# 執行
+## 執行
 
 直接執行 perl GetUniCharVer.pl 
 
-# 結果
+## 結果
 
 執行後會產生二種檔案, 第一種是每個字或每個區間的版本, 這是依原始檔內容產生的.
 
 第二種檔案是找出同一版本的區間, 以簡省檔案空間及方便其他程式使用.
 
-# 範例
+## 範例
 
 第一種檔案例子, 內容分別是 總類 : 編碼或區間 : 版本(或未分配)
 
@@ -53,3 +53,13 @@ R,038B,038B,0<br>
 * N:noncharacter , 非字元
 
 版本為 0 表示原始資料為 unassigned.
+
+## 程式應用
+
+### 產生 Perl 使用的程式碼
+
+執行 create_perl_code.pl , 會產生 perl_code.pl , 這個可以使用在 Perl 程式中。
+
+### 產生 Python 使用的程式碼
+
+執行 create_python_code.pl , 會產生 python_code.py , 這個可以使用在 Python 程式中。
